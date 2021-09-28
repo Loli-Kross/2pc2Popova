@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _2pc2Popova
+namespace _pz_5PopovaElizaveta
 {
     class Program
     {
