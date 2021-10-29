@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_6", "pz_6\pz_6.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_8PopovaElizaveta", "pz_8PopovaElizaveta\pz_8PopovaElizaveta.csproj", "{085E3929-0468-4836-913F-1122F0C4D4B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pz_9PopovaElizaveta", "pz_9PopovaElizaveta\pz_9PopovaElizaveta.csproj", "{F9B6260E-9633-4E99-8425-43A58DCB4B79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_9PopovaElizaveta", "pz_9PopovaElizaveta\pz_9PopovaElizaveta.csproj", "{F9B6260E-9633-4E99-8425-43A58DCB4B79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pz_10PopovaElizaveta", "pz_10PopovaElizaveta\pz_10PopovaElizaveta.csproj", "{470ACEE0-F635-4A19-AC2A-EBFBC6DFEEF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F9B6260E-9633-4E99-8425-43A58DCB4B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9B6260E-9633-4E99-8425-43A58DCB4B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9B6260E-9633-4E99-8425-43A58DCB4B79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{470ACEE0-F635-4A19-AC2A-EBFBC6DFEEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{470ACEE0-F635-4A19-AC2A-EBFBC6DFEEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{470ACEE0-F635-4A19-AC2A-EBFBC6DFEEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{470ACEE0-F635-4A19-AC2A-EBFBC6DFEEF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
