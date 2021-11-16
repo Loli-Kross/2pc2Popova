@@ -10,7 +10,7 @@ namespace pz_6
             int b = 1;
             while (b < 10) 
             {
-                Console.WriteLine($"{a}*{b}=" +a*b);
+                Console.WriteLine($"{a}*{b}=" + a*b);
                 b++;
             }
         }
