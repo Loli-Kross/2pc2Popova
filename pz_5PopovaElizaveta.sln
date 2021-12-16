@@ -25,7 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_15PopovaElizaveta", "pz_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_16PopovaElizaveta", "pz_16PopovaElizaveta\pz_16PopovaElizaveta.csproj", "{71722BDB-1D7C-4CC7-BD4E-439634E05440}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pz_17PopovaElizaveta", "pz_17PopovaElizaveta\pz_17PopovaElizaveta.csproj", "{183687DE-600C-473F-A8BC-8D6F5C22E018}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_17PopovaElizaveta", "pz_17PopovaElizaveta\pz_17PopovaElizaveta.csproj", "{183687DE-600C-473F-A8BC-8D6F5C22E018}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_18PopovaElizaveta", "pz_18PopovaElizaveta\pz_18PopovaElizaveta.csproj", "{09D9E909-4BFD-4964-939E-63C0F4B49F2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pz_19PopovaElizaveta", "pz_19PopovaElizaveta\pz_19PopovaElizaveta.csproj", "{55E2CECA-347A-43F4-8C5B-2F5E3F448B4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +85,14 @@ Global
 		{183687DE-600C-473F-A8BC-8D6F5C22E018}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{183687DE-600C-473F-A8BC-8D6F5C22E018}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{183687DE-600C-473F-A8BC-8D6F5C22E018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D9E909-4BFD-4964-939E-63C0F4B49F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D9E909-4BFD-4964-939E-63C0F4B49F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D9E909-4BFD-4964-939E-63C0F4B49F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D9E909-4BFD-4964-939E-63C0F4B49F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55E2CECA-347A-43F4-8C5B-2F5E3F448B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E2CECA-347A-43F4-8C5B-2F5E3F448B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E2CECA-347A-43F4-8C5B-2F5E3F448B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E2CECA-347A-43F4-8C5B-2F5E3F448B4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
