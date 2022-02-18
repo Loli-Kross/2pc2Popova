@@ -4,23 +4,30 @@ namespace pz_13PopovaElizaveta
 {
     class Program
     { 
-        enum Grade {очень_плохо = 1, неудовлетворительно, удовлетворительно, хорошо, отлично};
-        static void Main(string[] args)
+        enum Grade {очень_плохо, неудовлетворительно, удовлетворительно, хорошо, отлично};
+        static void Main()
         {
             Console.WriteLine("Введите оценку:");
-            int v;
-            v = Convert.ToInt32(Console.Read());
+            int v = Convert.ToInt32(Console.ReadLine());
             switch (v)
             {
-                case (int)Grade.очень_плохо: Console.WriteLine($"Характеристика отметки {v}: очень_плохо");
+                case 1: 
+                    Console.WriteLine($"Характеристика отметки 1: {Grade.очень_плохо}");
                     break;
-                case (int)Grade.неудовлетворительно: Console.WriteLine($"Характеристика отметки {v}: неудовлетворительно");
+                case 2: 
+                    Console.WriteLine($"Характеристика отметки 2: {Grade.неудовлетворительно}");
                     break;
-                case (int)Grade.удовлетворительно: Console.WriteLine($"Характеристика отметки {v}: удовлетворительно");
+                case 3: 
+                    Console.WriteLine($"Характеристика отметки 3: {Grade.удовлетворительно}");
                     break;
-                case (int)Grade.хорошо: Console.WriteLine($"Характеристика отметки {v}: хорошо");
+                case 4: 
+                    Console.WriteLine($"Характеристика отметки 4: {Grade.хорошо}");
                     break;
-                case(int) Grade.отлично: Console.WriteLine($"Характеристика отметки {v}: отлично");
+                case 5: 
+                    Console.WriteLine($"Характеристика отметки 5: {Grade.отлично}");
+                    break;
+                default:
+                    Console.WriteLine("Неверное значение оценки");
                     break;
             }
         }
