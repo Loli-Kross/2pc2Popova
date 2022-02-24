@@ -27,7 +27,7 @@ namespace pz_2._3PopovaElizaveta
             atom6.Valence();
             Console.WriteLine($"Количество химических элементов с 1 валентностью: {valenceOne}\nКоличество химических элементов со 2 валентностью: {valenceTwo}");
         }
-        //создаём поля, перечисления и методы
+        //создаём поля, перечисления, конструкторы и методы
         private string name;
         public string Name {get {return "Элемент не выбран";} set {name = value;}}
         private int elementNumber;
