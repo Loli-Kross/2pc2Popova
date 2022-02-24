@@ -7,24 +7,25 @@ namespace pz_2._3PopovaElizaveta
         static void Main(string[] args)
         {
             //создаём объекты
-            Atom atom1 = new Atom("Водород");
+            Atom atom1 = new RadioactiveAtom("Водород");
             atom1.GetInfo();
             atom1.Valence();
-            Atom atom2 = new Atom(5, 10.811f);
+            Atom atom2 = new RadioactiveAtom(5, 10.811f);
             atom2.GetInfo();
             atom2.Valence();
-            Atom atom3 = new Atom("Неон", 10, 20.179f);
+            Atom atom3 = new RadioactiveAtom("Неон", 10, 20.179f);
             atom3.GetInfo();
             atom3.Valence();
-            Atom atom4 = new Atom("Фтор", 9);
+            Atom atom4 = new RadioactiveAtom("Фтор", 9);
             atom4.GetInfo();
             atom4.Valence();
-            Atom atom5 = new Atom("Берилий");
+            Atom atom5 = new RadioactiveAtom("Бериллий");
             atom5.GetInfo();
             atom5.Valence();
-            Atom atom6 = new Atom(5);
+            Atom atom6 = new RadioactiveAtom(5);
             atom6.GetInfo();
             atom6.Valence();
+            Atom atom = new RadioactiveAtom("Водород");
             Console.WriteLine($"Количество химических элементов с 1 валентностью: {valenceOne}\nКоличество химических элементов со 2 валентностью: {valenceTwo}");
         }
         //создаём поля, перечисления, конструкторы и методы
@@ -65,12 +66,12 @@ namespace pz_2._3PopovaElizaveta
             if ((name == "Водород")|(name == "Литий")|(name == "Фтор")|(elementNumber == 1)|(elementNumber == 3) | (elementNumber == 9))
             {
                 valence = $"{(int)Val.one}";
-                Console.WriteLine($"Название: {name}\nНомер элемента: {elementNumber}\nМасса: {mass}\nВалентность: {valence}\nКоличество электронов: {elementNumber}");
+                Console.WriteLine($"Название: {name}\nНомер элемента: {elementNumber}\nМасса: {mass}\nВалентность: {valence}\nКоличество электронов: {elementNumber}\nПериод полураспада элемента: ");
             } else if ((name == "Гелий") | (name == "Неон") | (elementNumber == 2) | (elementNumber == 10))
             {
                 valence = $"{(int)Val.zero}";
                 Console.WriteLine($"Название: {name}\nНомер элемента: {elementNumber}\nМасса: {mass}\nВалентность: {valence}\nКоличество электронов: {elementNumber}");
-            } else if ((name == "Берилий") | (name == "Кислород") | (elementNumber == 4) | (elementNumber == 8))
+            } else if ((name == "Бериллий") | (name == "Кислород") | (elementNumber == 4) | (elementNumber == 8))
             {
                 valence = $"{(int)Val.two}";
                 Console.WriteLine($"Название: {name}\nНомер элемента: {elementNumber}\nМасса: {mass}\nВалентность: {valence}\nКоличество электронов: {elementNumber}");
@@ -89,63 +90,37 @@ namespace pz_2._3PopovaElizaveta
             }
         }
     }
+    //создаём подкласс
+    class RadioactiveAtom : Atom
+    {
+        private string halfLife;
+        public string HalfLife {
+            get {return "0 сек";} 
+            set {
+                
+                if ((Name == "Водород")|(ElementNumber == 1)){halfLife = "12,3 года";} 
+                else if((Name == "Гелий")|(ElementNumber == 2)){halfLife = "-";}
+                else if ((Name == "Литий")|(ElementNumber == 3)){halfLife = "-";}
+                else if ((Name == "Бериллий")|(ElementNumber == 4)){halfLife = "8,2·10-17 сек";}
+                else if ((Name == "Бор")|(ElementNumber == 3)){halfLife = "-";}
+                else if ((Name == "Углерод")|(ElementNumber == 6)){halfLife = "5700 лет";}
+                else if ((Name == "Азот")|(ElementNumber == 7)){halfLife = "10 мин";}
+                else if ((Name == "Кислород")|(ElementNumber == 8)){halfLife = "-";}
+                else if ((Name == "Фтор")|(ElementNumber == 9)){halfLife = "4.158 сек - 109.771 мин";}
+                else if ((Name == "Неон")|(ElementNumber == 10)){halfLife = "-";}
+            }
+        }
+        public RadioactiveAtom(string name) : base(name) { }
+        public RadioactiveAtom(int elementNumber) : base(elementNumber) { }
+        public RadioactiveAtom(float mass) : base(mass) { }
+        public RadioactiveAtom(string name, int elementNumber) : base(name, elementNumber) { }
+        public RadioactiveAtom(string name, float mass) : base(name, mass) { }
+        public RadioactiveAtom(int elementNumber, float mass) : base(elementNumber, mass) { }
+        public RadioactiveAtom(string name, int elementNumber, float mass) : base(name, elementNumber, mass) { }
+        public virtual void Half()
+        {
+            string c = halfLife;
+        
+            //на этом мои познания как и возможности мозговой активности иссякают. Я не могу понять как исправить метод вывода данных в консоль чтобы всё не поломать.
+    }
 }
-        //public string Name {
-        //    get {return name = "Элемент не выбран";} 
-        //    set{ 
-        //        name = Console.ReadLine();
-        //        switch (name)
-        //        {
-        //            case "Водород": countElectrons = 1; numberOfElectrons = 1; mass = 1.00794f; valence = Convert.ToChar(Val.I); break;
-        //            case "Гелий": countElectrons = 2; numberOfElectrons = 2; mass = 4.002602f; valence = Convert.ToChar(Val._); break;
-        //            case "Литий": countElectrons = 3; numberOfElectrons = 3; mass = 6.941f; valence = Convert.ToChar(Val.I); break;
-        //            case "Берилий": countElectrons = 4; numberOfElectrons = 4; mass = 9.012182f; valence = Convert.ToChar(Val.II); break;
-        //            case "Бор": countElectrons = 5; numberOfElectrons = 5; mass = 10.811f; valence = Convert.ToChar(Val.III); break;
-        //            case "Углерод": countElectrons = 6; numberOfElectrons = 6; mass = 12.0107f; valence = Convert.ToChar($"{Val.IV}, {Val.II}"); break;
-        //            case "Азот": countElectrons = 7; numberOfElectrons = 7; mass = 14.0067f; valence = Convert.ToChar($"{Val.I}, {Val.II}, {Val.III}, {Val.IV}"); break;
-        //            case "Кислород": countElectrons = 8; numberOfElectrons = 8; mass = 15.9994f; valence = Convert.ToChar(Val.II); break;
-        //            case "Фтор": countElectrons = 9; numberOfElectrons = 9; mass = 18.9984032f; valence = Convert.ToChar(Val.I); break;
-        //            case "Неон": countElectrons = 10; numberOfElectrons = 10; mass = 20.1797f; valence = Convert.ToChar(Val._); break;
-        //        }
-        //    }
-        //} 
-        //public int CountElectrons {
-        //    get {return countElectrons = 0;}
-        //    set 
-        //    {
-        //        countElectrons = Console.Read();
-        //        switch (countElectrons) 
-        //        { 
-        //            case 1: name = "Водород"; numberOfElectrons = 1; mass = 1.00794f; valence = Convert.ToChar(Val.I); break;
-        //            case 2: name = "Гелий"; numberOfElectrons = 2; mass = 4.002602f; valence = Convert.ToChar(Val._); break;
-        //            case 3: name = "Литий"; numberOfElectrons = 3; mass = 6.941f; valence = Convert.ToChar(Val.I); break;
-        //            case 4: name = "Берилий"; numberOfElectrons = 4; mass = 9.012182f; valence = Convert.ToChar(Val.II); break;
-        //            case 5: name = "Бор"; numberOfElectrons = 5; mass = 10.811f; valence = Convert.ToChar(Val.III); break;
-        //            case 6: name = "Углерод"; numberOfElectrons = 6; mass = 12.0107f; valence = Convert.ToChar($"{Val.IV}, {Val.II}"); break;
-        //            case 7: name = "Азот"; numberOfElectrons = 7; mass = 14.0067f; valence = Convert.ToChar($"{Val.I}, {Val.II}, {Val.III}, {Val.IV}"); break;
-        //            case 8: name = "Кислород"; numberOfElectrons = 8; mass = 15.9994f; valence = Convert.ToChar(Val.II); break;
-        //            case 9: name = "Фтор"; numberOfElectrons = 9; mass = 18.9984032f; valence = Convert.ToChar(Val.I); break;
-        //            case 10: name = "Неон"; numberOfElectrons = 10; mass = 20.1797f; valence = Convert.ToChar(Val._); break;
-        //        }
-        //    }
-        //}
-        //public float Mass { 
-        //    get {return mass = 0;} 
-        //    set
-        //    {
-        //        mass = Console.Read();
-        //        switch (mass)
-        //        {
-        //            case 1.00794f: name = "Водород"; countElectrons = 1; numberOfElectrons = 1; valence = Convert.ToChar(Val.I); break;
-        //            case 4.002602f: name = "Гелий"; countElectrons = 1; numberOfElectrons = 2; valence = Convert.ToChar(Val._); break;
-        //            case 6.941f: name = "Литий"; countElectrons = 1; numberOfElectrons = 3; valence = Convert.ToChar(Val.I); break;
-        //            case 9.012182f: name = "Берилий"; countElectrons = 1; numberOfElectrons = 4; valence = Convert.ToChar(Val.II); break;
-        //            case 10.811f: name = "Бор"; countElectrons = 1; numberOfElectrons = 5; valence = Convert.ToChar(Val.III); break;
-        //            case 12.0107f: name = "Углерод"; countElectrons = 1; numberOfElectrons = 6; valence = Convert.ToChar($"{Val.IV}, {Val.II}"); break;
-        //            case 14.0067f: name = "Азот"; countElectrons = 1; numberOfElectrons = 7; valence = Convert.ToChar($"{Val.I}, {Val.II}, {Val.III}, {Val.IV}"); break;
-        //            case 15.9994f: name = "Кислород"; countElectrons = 1; numberOfElectrons = 8; valence = Convert.ToChar(Val.II); break;
-        //            case 18.9984032f: name = "Фтор"; countElectrons = 1; numberOfElectrons = 9; valence = Convert.ToChar(Val.I); break;
-        //            case 20.1797f: name = "Неон"; countElectrons = 1; numberOfElectrons = 10; valence = Convert.ToChar(Val._); break;
-        //        }
-        //    }
-        //}
