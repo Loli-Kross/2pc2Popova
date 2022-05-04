@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2pc2Popova", "2pc2Popova\2pc2Popova.csproj", "{FDCCB4D0-E66F-4659-B6DA-8C198DF05F85}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_6", "pz_6\pz_6.csproj", "{8296DCF4-B5FC-4DC7-A580-C75672D9B60E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_8PopovaElizaveta", "pz_8PopovaElizaveta\pz_8PopovaElizaveta.csproj", "{085E3929-0468-4836-913F-1122F0C4D4B6}"
@@ -31,7 +29,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_18PopovaElizaveta", "pz_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_19PopovaElizaveta", "pz_19PopovaElizaveta\pz_19PopovaElizaveta.csproj", "{55E2CECA-347A-43F4-8C5B-2F5E3F448B4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pz_2.3PopovaElizaveta", "pz_2.3PopovaElizaveta\pz_2.3PopovaElizaveta.csproj", "{9B5BBAD3-69A3-4E59-B127-14788C760697}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_2.3PopovaElizaveta", "pz_2.3PopovaElizaveta\pz_2.3PopovaElizaveta.csproj", "{9B5BBAD3-69A3-4E59-B127-14788C760697}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_2_8PopovaElizaveta", "pz_2_8PopovaElizaveta\pz_2_8PopovaElizaveta.csproj", "{9DE37295-6780-4C79-8096-E22623D6AB38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_8_Delegats", "2_8_Delegats\2_8_Delegats.csproj", "{683BD434-0BA1-467D-B3C4-CC91F63D139D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_2_9PopovaElizaveta", "pz_2_9PopovaElizaveta\pz_2_9PopovaElizaveta.csproj", "{70C60618-1970-4340-8B05-7F712516F2FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_2_10PopovaElizaveta", "pz_2_10PopovaElizaveta\pz_2_10PopovaElizaveta.csproj", "{53701CB7-D1F8-49EA-B943-13C2CB0EE330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pz_2_12PopovaElizaveta", "pz_2_12PopovaElizaveta\pz_2_12PopovaElizaveta.csproj", "{85690AC6-0C2F-4A7E-B404-0493B7139BF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +47,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FDCCB4D0-E66F-4659-B6DA-8C198DF05F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FDCCB4D0-E66F-4659-B6DA-8C198DF05F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FDCCB4D0-E66F-4659-B6DA-8C198DF05F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FDCCB4D0-E66F-4659-B6DA-8C198DF05F85}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8296DCF4-B5FC-4DC7-A580-C75672D9B60E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8296DCF4-B5FC-4DC7-A580-C75672D9B60E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8296DCF4-B5FC-4DC7-A580-C75672D9B60E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -99,6 +103,26 @@ Global
 		{9B5BBAD3-69A3-4E59-B127-14788C760697}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B5BBAD3-69A3-4E59-B127-14788C760697}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B5BBAD3-69A3-4E59-B127-14788C760697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DE37295-6780-4C79-8096-E22623D6AB38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE37295-6780-4C79-8096-E22623D6AB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE37295-6780-4C79-8096-E22623D6AB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE37295-6780-4C79-8096-E22623D6AB38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{683BD434-0BA1-467D-B3C4-CC91F63D139D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683BD434-0BA1-467D-B3C4-CC91F63D139D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683BD434-0BA1-467D-B3C4-CC91F63D139D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683BD434-0BA1-467D-B3C4-CC91F63D139D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70C60618-1970-4340-8B05-7F712516F2FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C60618-1970-4340-8B05-7F712516F2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C60618-1970-4340-8B05-7F712516F2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C60618-1970-4340-8B05-7F712516F2FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53701CB7-D1F8-49EA-B943-13C2CB0EE330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53701CB7-D1F8-49EA-B943-13C2CB0EE330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53701CB7-D1F8-49EA-B943-13C2CB0EE330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53701CB7-D1F8-49EA-B943-13C2CB0EE330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85690AC6-0C2F-4A7E-B404-0493B7139BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85690AC6-0C2F-4A7E-B404-0493B7139BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85690AC6-0C2F-4A7E-B404-0493B7139BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85690AC6-0C2F-4A7E-B404-0493B7139BF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
