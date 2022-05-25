@@ -12,9 +12,9 @@ struct MARSH
         TERM = t;
         NUMER = n;
     }
-    public void Show()
+    public override string ToString()
     {
-        Console.WriteLine($"Начало маршрута {BEGST}\nКонец маршрута {TERM}  \nНомер маршрута {NUMER}");//Вывод данных
+        return $"Начало маршрута {BEGST}\nКонец маршрута {TERM}  \nНомер маршрута {NUMER}";//Вывод данных
     }
 }
 
@@ -35,7 +35,7 @@ namespace pz_2_10PopovaElizaveta
                 Console.Write("Конец маршрута в точке: ");
                 Marsh[i].TERM = Console.ReadLine();
                 Console.Write("Номер маршрута: ");
-                Marsh[i].NUMER = Console.Read();
+                Marsh[i].NUMER = Convert.ToInt16(Console.ReadLine());
                 
                 Console.WriteLine();
             }

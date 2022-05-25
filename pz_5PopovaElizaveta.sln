@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz_2_12PopovaElizaveta", "p
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "od_mass", "od_mass\od_mass.csproj", "{15C47F90-6524-4C6D-9DB5-19C9FCF7ADBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dv_mass", "dv_mass\dv_mass.csproj", "{4260DFC2-5397-487C-914B-FC287D7AD75D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dv_mass", "dv_mass\dv_mass.csproj", "{4260DFC2-5397-487C-914B-FC287D7AD75D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pz_2_2PopovaElizaveta", "pz_2_2PopovaElizaveta\pz_2_2PopovaElizaveta.csproj", "{C86A8EC4-FF88-4E1E-9B73-DF9D7EFA114C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{4260DFC2-5397-487C-914B-FC287D7AD75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4260DFC2-5397-487C-914B-FC287D7AD75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4260DFC2-5397-487C-914B-FC287D7AD75D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86A8EC4-FF88-4E1E-9B73-DF9D7EFA114C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86A8EC4-FF88-4E1E-9B73-DF9D7EFA114C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86A8EC4-FF88-4E1E-9B73-DF9D7EFA114C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86A8EC4-FF88-4E1E-9B73-DF9D7EFA114C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
